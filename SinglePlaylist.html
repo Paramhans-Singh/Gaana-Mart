@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Playlist</title>
+    <!-- it is connected to two stylesheets -->
+    <link rel="stylesheet" type="text/css" href="SinglePlaylist.css"><!-- this is the main stylesheet -->
+    <!-- desktop first approach is used for the same. -->
+    <link rel="stylesheet" type="text/css" href="SecondaryPage.css">
+    <!-- this is the style sheet with all the media queries -->
+    <!-- this script is just for font awesome fonts -->
+        <link rel="icon" href="./media/website_logo.jpg" type="image/gif" />
+<script src="https://kit.fontawesome.com/8fca2774ad.js" crossorigin="anonymous"></script></head>
+<!-- body -->
+
+<body>
+    <!-- top navigation bar -->
+    <nav class="navigation-bar">
+        <!-- this div contains the logo and title os the page -->
+        <div class="title-combo">
+            <div class="website-logo">
+                <img src="media/website_logo.png">
+            </div>
+            <div class="website-name">
+                <h2>
+                    <a href="index.html">
+                        Gaana
+                    </a>
+                </h2>
+                <h6 style="color: magenta;">
+                    <a href="index.html">Mart</a>
+                </h6>
+            </div>
+        </div>
+        <!-- this is the animated favourites text -->
+        <div class="favs">
+            <h4><a href="index.html">
+                Favourites
+            </a></h4>
+        </div>
+        <div class="search-bar">
+            <div>
+                <!-- magnifying glass- search icon -->
+                <i class="fas fa-search search-ico"></i>
+            </div>
+            <input type="text" name="search" placeholder="Search">
+            <div>
+                <!-- mic icon -->
+                <i class="fas fa-microphone mic-ico"></i>
+            </div>
+        </div>
+        <!-- this is for notification bell -->
+        <div class="notification-bell">
+            <!-- <img src="media/bell_icon.png">  -->
+        <i class="fa-regular fa-bell-slash"></i>
+            Notifications
+
+        </div>
+        <!-- this is for profile picture -->
+        <div class="profile-picture">
+            <img src="media/profile_picture.png">
+        </div>
+    </nav>
+    <!-- this is the main center part of the page and it is divided into two sections, namely section 1 and section 2-->
+    <!-- I have separated these sections using the aside tag for each section -->
+    <main>
+        <!-- aside section 1 -->
+        <aside class="aside section-1">
+            <!-- this is for the jumbotron -->
+            <div class="jumbotron">
+                <div class=jumbotron-image>
+                    <!-- there is nothing in this div because all the images and all are added by css -->
+                </div>
+                <!-- jumbotron details -->
+                <div class="jumbotron-detail">
+                    <!-- descriptive part of the jumbotron this will contain name , number of followers and all -->
+                    <div class="descriptive-part">
+                        <div class="song-name-main">
+                            <h1>Lahore</h1>
+                        </div>
+                        <div class="followers">
+                            21M Followers
+                        </div>
+                        <p class="author">Guru Randhawa</p>
+                        <!-- short description of the current author -->
+                        <p class="desc">
+                            Lahore is a Punjabi Indi-pop single by Guru Randhawa, released by T-Series on 13 December 2017. It is one of the most-streamed songs in India. It has over 1 billion views on YouTube. It was recreated by Sachin-Jigar as Lagdi Lahore Di from the film Street Dancer 3D (2020), voiced by Guru Randhawa and Tulsi Kumar.
+                        </p>
+                    </div>
+                    <!-- action part -->
+                    <div class="action-part">
+                        <!-- action buttons -->
+                        <div class="btns">
+                            <button>Play All</button>
+                            <button>Follow</button>
+                        </div>
+                        <p>
+                            387 Tracks | 158 Albums
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- now the playlist part begins -->
+            <div class="playlist-items">
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            01
+                        </div>
+                        <div>
+                            <img src="media/playlist/pathaan.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Pathaan
+                            </h5>
+                            <p>
+                                Vishal & Shekhar
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        3:12
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            02
+                        </div>
+                        <div>
+                            <img src="media/playlist/shezada.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                             Shezada   
+                            </h5>
+                            <p>
+                               Sonu Nigam 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        3:44
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            03
+                        </div>
+                        <div>
+                            <img src="media/playlist/payar.jpeg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                             Tere Payar Mein   
+                            </h5>
+                            <p>
+                             Arijit Singh   
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        2:55
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            04
+                        </div>
+                        <div>
+                            <img src="media/playlist/sher.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                               Selfiee 
+                            </h5>
+                            <p>
+                              Abhinav Shekhar  
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        3:37
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            05
+                        </div>
+                        <div>
+                            <img src="media/playlist/brown.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                               Brown Munde  
+                            </h5>
+                            <p>
+                                AP Dhillon 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        3:27
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            06
+                        </div>
+                        <div>
+                            <img src="media/playlist/lahore.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                             Lahore   
+                            </h5>
+                            <p>
+                              Guru Randhawa   
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        4:31
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            07
+                        </div>
+                        <div>
+                            <img src="media/playlist/garmi.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                             Garmi   
+                            </h5>
+                            <p>
+                             Guru Randhawa    
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        3:28
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            08
+                        </div>
+                        <div>
+                            <img src="media/playlist/proper.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                               Proper Patola 
+                            </h5>
+                            <p>
+                              Diljit Dosanjh  
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        3:48
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            09
+                        </div>
+                        <div>
+                            <img src="media/playlist/5.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                             5 Taara   
+                            </h5>
+                            <p>
+                             Diljit Dosanjh   
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        3:20
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            10
+                        </div>
+                        <div>
+                            <img src="media/playlist/mein.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                             Main Khiladi   
+                            </h5>
+                            <p>
+                              Udit Narayan  
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        4:10
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            11
+                        </div>
+                        <div>
+                            <img src="media/playlist/sorry.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Sorry
+                            </h5>
+                            <p>
+                              Justin Bieber  
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        4:00
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            12
+                        </div>
+                        <div>
+                            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/166e992b-4534-4bd8-bb41-3be395f82cde/daojfrr-facc1540-40b8-455f-b8b6-ba4f14738b32.png/v1/fill/w_894,h_894,q_75,strp/bts___wings_by_goldendesigncover-daojfrr.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sIm9iaiI6W1t7InBhdGgiOiIvZi8xNjZlOTkyYi00NTM0LTRiZDgtYmI0MS0zYmUzOTVmODJjZGUvZGFvamZyci1mYWNjMTU0MC00MGI4LTQ1NWYtYjhiNi1iYTRmMTQ3MzhiMzIucG5nIiwid2lkdGgiOiI8PTg5NCIsImhlaWdodCI6Ijw9ODk0In1dXX0.VXwplpd8rbngUYyW306GbKo_PdH8B_g3gw3fr1V0Mes">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Golden
+                            </h5>
+                            <p>
+                               BTS 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        3:31
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- one aside section is complete -->
+        <!-- now the second aside section will start from here -->
+        <!-- the page is responsive. please try reducing the width of the page -->
+        <!-- the aside section will collapse and a "more button will be shown to you." -->
+        <!-- clicking on this more button, you will be shown the aside section 2  -->
+        <!-- its position will be absolute at lower resolutions -->
+        <!-- this is the label for that more button -->
+        <label for="more"><i class="fas fa-angle-double-left"></i>More</label>
+        <!-- this is that more button -->
+        <!-- and this is the check box. this will always be hidden -->
+        <!-- check the stylesheet_main.css when the label is clicked, this checkbox will be checked -->
+        <!-- which will invoke the aside section 2 on lower resolutions -->
+        <input type="checkbox" id="more">
+        <!-- </div> -->
+        <aside class="aside section-2">
+            <!-- similar class will be applicable to both similar artists and recently played -->
+            <div class="similar">
+                <!-- section heading, which also contains the view all button -->
+                <div class="section-heading">
+                    <h1>Similar Artists</h1>
+                    <div class="view-all-button">
+                        View All
+                    </div>
+                </div>
+                <!-- list is the container for the contents of similar artists -->
+                <div class="list">
+                    <!-- item -->
+                    <div class="list-item">
+                        <div>
+                            <img src="media/playlist/sorry.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left:120px;">
+                            <h5>
+                               Sorry
+                            </h5>
+                            <p class="author-name">
+                                Justin Beiber
+                            </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <p class="author-name">
+                                2:14
+                            </p>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="list-item">
+                        <div>
+                            <img src="media/playlist/5.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left:120px;">
+                            <h5>
+                                5 Tara
+                            </h5>
+                            <p class="author-name">
+                                Diljit Dosanjh
+                            </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <p class="author-name">
+                                4:00
+                            </p>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="list-item">
+                        <div>
+                            <img src="media/playlist/lahore.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left:120px;">
+                            <h5>
+                                Lahore
+                            </h5>
+                            <p class="author-name">
+                                Guru Randhawa
+                            </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <p class="author-name">
+                                4:44
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- recently played section -->
+                <div class="similar">
+                    <!-- section headings, which also contains the view all button -->
+                    <div class="section-heading">
+                        <h1>Recently Played</h1>
+                        <div class="view-all-button">
+                            View All
+                        </div>
+                    </div>
+                    <!-- again list is a container for all the contents of recently played section -->
+                    <div class="list">
+                        <!-- item -->
+                        <div class="playlist-item">
+                            <div class="left">
+                                <div>
+                                    01
+                                </div>
+                                <div>
+                                    <img src="media/playlist/lahore.jpg">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        Lahore
+                                    </h5>
+                                    <p>
+                                        Guru 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="playlist-item">
+                            <div class="left">
+                                <div>
+                                    02
+                                </div>
+                                <div>
+                                    <img src="media/playlist/5.jpg">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        5_Tara
+                                    </h5>
+                                    <p>
+                                        Diljit
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="playlist-item">
+                            <div class="left">
+                                <div>
+                                    03
+                                </div>
+                                <div>
+                                    <img src="media/playlist/proper.jpg">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        Proper_Patola
+                                    </h5>
+                                    <p>
+                                        Diljit 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="playlist-item">
+                            <div class="left">
+                                <div>
+                                    04
+                                </div>
+                                <div>
+                                    <img src="media/latest english/roar.jpg">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        Roar
+                                    </h5>
+                                    <p>
+                                        Ketty
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="playlist-item">
+                            <div class="left">
+                                <div>
+                                    05
+                                </div>
+                                <div>
+                                    <img src="media/latest english/toosie slide.jpg">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        Toosie_Slide
+                                    </h5>
+                                    <p>
+                                        Drake
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="playlist-item">
+                            <div class="left">
+                                <div>
+                                    06
+                                </div>
+                                <div>
+                                    <img src="media/latest english/uptown funk.png">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        Uptwon_Funk
+                                    </h5>
+                                    <p>
+                                        Bruno
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="playlist-item">
+                            <div class="left">
+                                <div>
+                                    07
+                                </div>
+                                <div>
+                                    <img src="media/latest hindi/baarish.jpeg">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        Baarish
+                                    </h5>
+                                    <p>
+                                        Half 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="playlist-item">
+                            <div class="left">
+                                <div>
+                                    08
+                                </div>
+                                <div>
+                                    <img src="media/latest hindi/galiyaan.jpg">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        Gulliyon
+                                    </h5>
+                                    <p>
+                                        Ek Villan
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="playlist-item">
+                            <div class="left">
+                                <div>
+                                    09
+                                </div>
+                                <div>
+                                    <img src="media/latest hindi/giveme some sunshine.jpg">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        All_is_well
+                                    </h5>
+                                    <p>
+                                        3idiots
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+
+
+
+    <!-- main part of the page is over. -->
+    <!-- this is the footer part. -->
+    <!-- its position will be fixed to the screen bottom. -->
+    <footer>
+        <div class="active-song-description">
+            <!-- song image -->
+            <div id="song-image">
+                <img src="media/playlist/5.jpg">
+            </div>
+            <!-- song name and author -->
+            <div class="song-desc">
+                <div>
+                    5 Tara
+                </div>
+                <div>
+                    Diljit Dosanjh
+                </div>
+            </div>
+                <!-- heart icon and ban icon -->
+            <div class="heart-and-ban-icon">
+                <span>
+                    <i class="far fa-heart"></i>
+                </span>
+                <span>
+                    <i class="fas fa-step-forward"></i>
+                </span>
+            </div>
+        </div>
+        <!-- these are the main player controls -->
+        <div class="player">
+            <div class="controls">
+                <div><i class="fas fa-random"></i></div>
+                <div><i class="fas fa-step-backward"></i></div>
+                <div><i class="fas fa-pause-circle"></i></div>
+                <div><i class="fas fa-step-forward"></i></div>
+                <div><i class="fas fa-redo"></i></div>
+            </div>
+            <!-- this is the slider -->
+            <div id="slider">
+                <!-- current time -->
+                <div class="time">
+                    1:39
+                </div>
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+                </div>
+                <!-- total time -->
+                <div class="time">
+                    4:44
+                </div>
+            </div>
+        </div>
+        <!-- other icons including the volume slider and all -->
+        <div class="extras">
+            <div>
+                <i class="fas fa-list-ul"></i>
+            </div>
+            <div>
+                <i class="fas fa-laptop"></i>
+            </div>
+            <div>
+                <i class="fas fa-volume-up"></i>
+            </div>
+            <div class="slidecontainer" style="width:30%;">
+                <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
+            </div>
+            <div>
+                <i class="fas fa-expand-alt"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
