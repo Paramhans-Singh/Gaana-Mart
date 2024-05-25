@@ -11,7 +11,7 @@ This project is a music streaming website named "GanaMart" inspired by platforms
 - **Responsive Design**: Optimized for viewing on various devices including desktops, tablets, and smartphones.
 
 ## GanaMart Website Preview 
-
+https://github.com/Paramhans-Singh/Gaana-Mart/assets/101575816/1fcc359d-bf95-4b80-8a4b-a68b0ec339a3
 
 ## Technologies Used
 - **Frontend**: HTML, CSS, JavaScript
